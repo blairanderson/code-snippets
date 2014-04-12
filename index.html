@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Code-snippets by blairanderson</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Code-snippets</h1>
+        <p>helpful snippets</p>
+
+        <p class="view"><a href="https://github.com/blairanderson/code-snippets">View the Project on GitHub <small>blairanderson/code-snippets</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/blairanderson/code-snippets/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/blairanderson/code-snippets/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/blairanderson/code-snippets">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="code-snippets" class="anchor" href="#code-snippets"><span class="octicon octicon-link"></span></a>code-snippets</h1>
+
+<p>helpful snippets</p>
+
+<div class="highlight highlight-scss"><pre>
+<span class="nc">.spinning</span> <span class="p">{</span>
+  <span class="na">-webkit-animation</span><span class="o">:</span> <span class="n">spin</span> <span class="mi">2</span><span class="kt">s</span> <span class="n">infinite</span> <span class="n">linear</span><span class="p">;</span>
+  <span class="na">-moz-animation</span><span class="o">:</span> <span class="n">spin</span> <span class="mi">2</span><span class="kt">s</span> <span class="n">infinite</span> <span class="n">linear</span><span class="p">;</span>
+  <span class="na">-o-animation</span><span class="o">:</span> <span class="n">spin</span> <span class="mi">2</span><span class="kt">s</span> <span class="n">infinite</span> <span class="n">linear</span><span class="p">;</span>
+  <span class="na">animation</span><span class="o">:</span> <span class="n">spin</span> <span class="mi">2</span><span class="kt">s</span> <span class="n">infinite</span> <span class="n">linear</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@-moz-keyframes</span> <span class="nt">spin</span> <span class="p">{</span>
+  <span class="nt">0</span><span class="err">%</span> <span class="p">{</span> <span class="na">-moz-transform</span><span class="o">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="mi">0</span><span class="kt">deg</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">100</span><span class="err">%</span> <span class="p">{</span> <span class="na">-moz-transform</span><span class="o">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="mi">359</span><span class="kt">deg</span><span class="p">);</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@-webkit-keyframes</span> <span class="nt">spin</span> <span class="p">{</span>
+  <span class="nt">0</span><span class="err">%</span> <span class="p">{</span> <span class="na">-webkit-transform</span><span class="o">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="mi">0</span><span class="kt">deg</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">100</span><span class="err">%</span> <span class="p">{</span> <span class="na">-webkit-transform</span><span class="o">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="mi">359</span><span class="kt">deg</span><span class="p">);</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@-o-keyframes</span> <span class="nt">spin</span> <span class="p">{</span>
+  <span class="nt">0</span><span class="err">%</span> <span class="p">{</span> <span class="na">-o-transform</span><span class="o">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="mi">0</span><span class="kt">deg</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">100</span><span class="err">%</span> <span class="p">{</span> <span class="na">-o-transform</span><span class="o">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="mi">359</span><span class="kt">deg</span><span class="p">);</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@-ms-keyframes</span> <span class="nt">spin</span> <span class="p">{</span>
+  <span class="nt">0</span><span class="err">%</span> <span class="p">{</span> <span class="na">-ms-transform</span><span class="o">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="mi">0</span><span class="kt">deg</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">100</span><span class="err">%</span> <span class="p">{</span> <span class="na">-ms-transform</span><span class="o">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="mi">359</span><span class="kt">deg</span><span class="p">);</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@keyframes</span> <span class="nt">spin</span> <span class="p">{</span>
+  <span class="nt">0</span><span class="err">%</span> <span class="p">{</span> <span class="na">transform</span><span class="o">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="mi">0</span><span class="kt">deg</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">100</span><span class="err">%</span> <span class="p">{</span> <span class="na">transform</span><span class="o">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="mi">359</span><span class="kt">deg</span><span class="p">);</span> <span class="p">}</span>
+<span class="p">}</span>
+
+</pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/blairanderson">blairanderson</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
